@@ -1,0 +1,29 @@
+{
+  "name": "atom-xterm-plugin",
+  "main": "./lib/atom-xterm",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+  },
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "repository": "https://github.com/aprday/atom-xterm-plugin",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "node-pty": "^0.7.0",
+    "pty.js": "https://github.com/platformio/pty.js/tarball/prebuilt",
+    "xterm": "^2.9.2"
+  }
+}

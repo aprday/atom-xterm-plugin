@@ -1,0 +1,54 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "xterm";
+
+.atom-xterm {
+    & ::-webkit-scrollbar {display:none}
+    .divider {
+        order: 1;
+        display: inherit;
+        flex: 0 0 auto;
+        position: absolute;
+        height: 10px;
+        border: 1px;
+        margin-top: -4px;
+        z-index: 2;
+        -webkit-user-select: none;
+        cursor: ns-resize;
+        width: 100%;
+    }
+    .atom-xterm-toolbar {
+        height: 32px;
+        line-height: 32px;
+        position: relative;
+        .icon {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .atom-xterm-terminal-select {
+        margin-left: 10px;
+    }
+}
+
+.terminal-status {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    .icon {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .current {
+        color: #fff
+    }
+}
